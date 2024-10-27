@@ -55,24 +55,3 @@ FOREIGN KEY (UserID) REFERENCES Users(UserID);
   "Default": "Server=MI_SERVIDOR\SQLEXPRESS;Database=UserManagementDB;Trusted_Connection=True;MultipleActiveResultSets=True;TrustServerCertificate=True"
 }
 ```
-
-- **JWTSettings**: Configuración para el manejo de tokens JWT, que incluye la llave, el emisor, la audiencia, y la duración del token.
-
-```json
-"JWTSettings": {
-  "Key": "ZKAZoQFn4KZLftiH5Wl/Wtv+TMT4wpoS9QViaPIk",
-  "Issuer": "CodeEntity",
-  "Audience": "BhdUser",
-  "DurationInMinutes": 60
-}
-```
-
-- **PasswordRegex**: Expresión regular para validar la contraseña. Asegúrese de que las contraseñas cumplan con los requisitos mínimos de seguridad.
-
-```json
-"PasswordRegex": "^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d@$!%*?&]{8,}$"
-```
-
-## Pruebas y Uso
-
-Proporcione instrucciones sobre cómo compilar, ejecutar y probar la aplicación. Incluya detalles sobre endpoints disponibles y cómo usarlos para realizar operaciones como registro de usuarios y gestión de teléfonos. Considerar la inclusión de ejemplos de solicitudes y respuestas.
